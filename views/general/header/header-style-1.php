@@ -57,6 +57,7 @@ if ( $ad_left['active_location'] || $ad_right['active_location'] ) {
 	        	<p>Universidad Nacional Autónoma de México</p>
 	         	<p><span>Facultad de Estudios Superiores Cuautitlán</span></p>
 	     	</div>
+	     	
    		</div>
      <!--termina header-->
          

@@ -51,7 +51,7 @@ if ( $ad_left['active_location'] || $ad_right['active_location'] ) {
 	            <img src="<?php bloginfo('template_url'); ?>/views/general/header/img/logo-fesc.png" height="110">
 	        </a>
 	        <a class="navbar-brand" href="http://www.cuautitlan.unam.mx/">   
-	            <img src="<?php bloginfo('template_url'); ?>/views/general/header/img/prensaydifusion.png" height="110">
+	            <img src="<?php bloginfo('template_url'); ?>/views/general/header/img/logo-difusion.png" height="110">
 	        </a>
 	        <div class="navbar-name" style="font-size: 23px; color:#FFF; font-family: Arial; text-align:left">
 	        	<p>Universidad Nacional Autónoma de México</p>

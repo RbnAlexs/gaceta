@@ -397,11 +397,5 @@ if ( $ad_left['active_location'] || $ad_right['active_location'] ) {
 	<!--header end-->
 </header><!-- .header -->
 
-<?php if ( is_home() || is_front_page() ) : 
-
-        echo do_shortcode('[rev_slider alias="home"]');
-
-    endif;?>
-
 <?php
 

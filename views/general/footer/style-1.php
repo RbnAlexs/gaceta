@@ -72,8 +72,8 @@ if ( publisher_get_option( 'footer_social_feed' ) != 'hide' && publisher_get_opt
       <!-- COLUMNA CAMPUS-->       
       <div class="col-lg-3 col-sm-3 address wow fadeInUp">
         <h1>CAMPUS</h1>
-        <address style="font-style: normal; size:14px">
-          <p style="color:#FFF"> 
+        <address>
+          <p> 
             <a href="http://www.cuautitlan.unam.mx/ubicacion.html" class="p-head">Campo Uno</a>: Av. 1o de Mayo S/N, Santa Mar&iacute;a las Torres, Campo Uno, 54740 Cuautitl&aacute;n Izcalli, Edo. de M&eacute;x.<br>
             <a href="http://www.cuautitlan.unam.mx/ubicacion.html" class="p-head">Campo Cuatro</a>: Carr. Cuautitl&aacute;n-Teoloyucan Km. 2.5, San Sebastian Xhala, 54714 Cuautitl&aacute;n Izcalli, Edo. de M&eacute;x.<br>
             <a href="http://www.cuautitlan.unam.mx/ubicacion.html" class="p-head">Centro de Asimilaci&oacute;n Tecnol&oacute;gica</a>: Av. Dr Jorge Jim&eacute;nez Cant&uacute;, INFONAVIT Nte. 54729 Cuautitl&aacute;n Izcalli, Edo. de M&eacute;x.
@@ -148,14 +148,14 @@ if ( publisher_get_option( 'footer_social_feed' ) != 'hide' && publisher_get_opt
         </ul>
       </div>
       <div class="col-lg-3 col-sm-3 address wow fadeInUp">
-          <address style="font-style:normal">
-              <p style="color:#FFF; size:14px">
+          <address>
+              <p>
               Hecho en México, todos los derechos reservados 2018. Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma requiere permiso previo por escrito de la institución.
               </p>
               <hr>
-              <p style="size:14px"><a href="aviso.html" style="color:#FFF">Aviso de privacidad</a></p>
+              <p><a href="aviso.html">Aviso de privacidad</a></p>
               <hr>
-              <p style="size:14px"><i class="fa fa-envelope pr-10"></i><a href="mailto:medios_diseno_fesc@yahoo.com?subject=Feedback" target="_blank" style="color:#FFF"> Comentarios y sugerencias para mejorar el portal web.</a></p>
+              <p><i class="fa fa-envelope pr-10"></i><a href="mailto:medios_diseno_fesc@yahoo.com?subject=Feedback" target="_blank"> Comentarios y sugerencias para mejorar el portal web.</a></p>
           <address>
       </div>
           

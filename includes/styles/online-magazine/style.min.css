@@ -97,7 +97,7 @@ body.active-top-line {
 }
 
 .navbar-name span {
-    font-size: .95em
+    line-height: 1.25em;
 }
 
 @media (min-width:768px) {

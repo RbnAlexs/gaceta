@@ -18,10 +18,6 @@
     color: #fff
 }
 
-.navbar-nav {
-    margin: 15px 0 0;
-    padding: 15px 0
-}
 
 .bf-breadcrumb-container,
 .navbar-default {
@@ -104,7 +100,7 @@ body.active-top-line {
     .navbar-nav {
         float: left;
         margin: 0;
-        text-align: center;
+        text-align: right;
         width: 100%;
         display: table
     }

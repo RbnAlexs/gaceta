@@ -4,6 +4,21 @@
 /**
  * Remove Rev Slider Metabox
  */
+
+function hide_update_msg_non_admins(){
+     if (!current_user_can( 'manage_options' )) { // non-admin users
+            echo '<style>#setting-error-tgmpa>.updated settings-error notice is-dismissible, .update-nag, .updated { display: none; }</style>';
+        }
+    }
+add_action( 'admin_head', 'hide_update_msg_non_admins');
+
+
+function remove_core_updates(){
+    global $wp_version;return(object) array('last_checked'=> time(),'version_checked'=> $wp_version,);
+}
+
+
+ 
 if ( is_admin() ) {
 
     function remove_revolution_slider_meta_boxes() {
@@ -16,8 +31,11 @@ if ( is_admin() ) {
     
 }
 
-function remove_core_updates(){
-    global $wp_version;return(object) array('last_checked'=> time(),'version_checked'=> $wp_version,);
+/**
+ * Disable revslider notice.
+ */
+function mytheme_disable_revslider_notice() {
+    update_option( 'revslider-valid-notice', 'false' );
 }
 add_filter('pre_site_transient_update_core','remove_core_updates');
 add_filter('pre_site_transient_update_plugins','remove_core_updates');

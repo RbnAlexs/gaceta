@@ -1,54 +1,20 @@
 <?php
+/* CUSTOM CODE */
 
-add_action( 'init', 'crear_post_type_cursos', 0 );
-function crear_post_type_cursos() {
-// Etiquetas para el Post Type
-    $labels = array(
-        'name'                => _x( 'Cursos', 'Post Type General Name', 'cursos-artist' ),
-        'singular_name'       => _x( 'Cursos', 'Post Type Singular Name', 'cursos-artist' ),
-        'menu_name'           => __( 'Cursos', 'cursos-artist' ),
-        'parent_item_colon'   => __( 'cursos Padre', 'cursos-artist' ),
-        'all_items'           => __( 'Todos los cursos', 'cursos-artist' ),
-        'view_item'           => __( 'Ver cursos', 'cursos-artist' ),
-        'add_new_item'        => __( 'Agregar Nuevo cursos', 'cursos-artist' ),
-        'add_new'             => __( 'Agregar Nuevo cursos', 'cursos-artist' ),
-        'edit_item'           => __( 'Editar cursos', 'cursos-artist' ),
-        'update_item'         => __( 'Actualizar cursos', 'cursos-artist' ),
-        'search_items'        => __( 'Buscar cursos', 'cursos-artist' ),
-        'not_found'           => __( 'No encontrado', 'cursos-artist' ),
-        'not_found_in_trash'  => __( 'No encontrado en la papelera', 'cursos-artist' ),
-    );
+/**
+ * Remove Rev Slider Metabox
+ */
+if ( is_admin() ) {
 
-// Otras opciones para el post type
+    function remove_revolution_slider_meta_boxes() {
+        remove_meta_box( 'mymetabox_revslider_0', 'page', 'normal' );
+        remove_meta_box( 'mymetabox_revslider_0', 'post', 'normal' );
+        remove_meta_box( 'mymetabox_revslider_0', 'YOUR_CUSTOM_POST_TYPE', 'normal' );
+    }
 
-    $args = array(
-        'label'               => __( 'cursos', 'cursos-artist' ),
-        'description'         => __( 'Próximos cursos', 'cursos-artist' ),
-        'labels'              => $labels,
-        'supports'            => array( 'title', 'thumbnail', 'revisions'),
-        /* Un Post Type hierarchical es como las paginas y puede tener padres e hijos.
-        * Uno sin hierarchical es como los posts
-        */
-        'hierarchical'        => false,
-        'public'              => true,
-        'show_ui'             => true,
-        'show_in_menu'        => true,
-        'show_in_nav_menus'   => true,
-        'show_in_admin_bar'   => true,
-        'menu_position'       => 5,
-        'can_export'          => true,
-        'has_archive'         => true,
-        'exclude_from_search' => false,
-        'publicly_queryable'  => true,
-        'capability_type'     => 'page',
-    );
-    register_post_type( 'cursos', $args );
-
-
+    add_action( 'do_meta_boxes', 'remove_revolution_slider_meta_boxes' );
+    
 }
-
-
-
 
 $template_directory = get_template_directory() . '/';
 

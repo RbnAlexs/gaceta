@@ -75,6 +75,16 @@ body.active-top-line {
     padding: 5px 15px 0 15px;
 }
 
+.title-departamento{
+    color: #cecece;
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.container-header{
+    padding: 0 !important;
+}
+
 .navbar-default {
     background-color: #08245a;
     border: none

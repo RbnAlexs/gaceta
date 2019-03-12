@@ -35,7 +35,7 @@ if ( $ad_left['active_location'] || $ad_right['active_location'] ) {
 ?>
 <header <?php publisher_attr( 'header', $class ); ?>>
 	<div class="navbar navbar-default navbar-static-top">
-		<div class="container">
+		<div class="container container-header">
 	        <div class="navbar-header">
 	        
 		       <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
@@ -56,7 +56,7 @@ if ( $ad_left['active_location'] || $ad_right['active_location'] ) {
 		        <div class="navbar-name" style="font-size: 23px; color:#FFF; font-family: Arial; text-align:left">
 		        	<p>Universidad Nacional Autónoma de México</p>
 		         	<p><span>Facultad de Estudios Superiores Cuautitlán</span></p>
-		         	<p>Departamento de Prensa y Difusión</p>
+		         	<p class="title-departamento">Departamento de Prensa y Difusión</p>
 		     	</div>
 		     	
 	   		</div>

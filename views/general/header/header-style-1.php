@@ -45,10 +45,10 @@ if ( $ad_left['active_location'] || $ad_right['active_location'] ) {
 		         </button>
 		         
 		        <a class="navbar-brand" href="https://www.unam.mx/">
-		            <img src="<?php bloginfo('template_url'); ?>/views/general/header/img/logo-unam.png" height="110">
+		            <img src="<?php bloginfo('template_url'); ?>/views/general/header/img/logo-unam.png" height="110" width="85">
 		        </a>
 		        <a class="navbar-brand" href="http://www.cuautitlan.unam.mx/">   
-		            <img src="<?php bloginfo('template_url'); ?>/views/general/header/img/logo-fesc.png" height="110">
+		            <img src="<?php bloginfo('template_url'); ?>/views/general/header/img/logo-fesc.png" height="110" width="85">
 		        </a>
 		        <a class="navbar-brand" href="http://www.cuautitlan.unam.mx/">   
 		            <img src="<?php bloginfo('template_url'); ?>/views/general/header/img/logo-fesc-difusion.png" height="110">

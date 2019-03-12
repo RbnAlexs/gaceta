@@ -68,7 +68,7 @@ body.active-top-line {
     float: none;
     height: auto;
     display: inline-block;
-    padding: 5px 0 0 15px;
+    padding: 5px 0 0 15px; 
 }
 
 .title-departamento{

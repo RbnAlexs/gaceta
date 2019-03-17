@@ -2,9 +2,46 @@
 /* CUSTOM CODE */
 
 /**
- * Remove Rev Slider Metabox
+ * Registro de Sidebars
  */
+function textdomain_register_sidebars() {
 
+    /* Register the primary sidebar. */
+    register_sidebar(
+        array(
+            'id' => '001',
+            'name' => __( 'Inicio', 'textdomain' ),
+            'description' => __( 'A short description of the sidebar.', 'textdomain' ),
+            'before_widget' => '<div class="wpb_widgetised_column wpb_content_element">',
+            'after_widget' => '</aside>',
+        )
+    );
+
+    /* Register the primary sidebar. */
+    register_sidebar(
+        array(
+            'id' => '002',
+            'name' => __( 'Historico Gacetas', 'textdomain' ),
+            'description' => __( 'A short description of the sidebar.', 'textdomain' ),
+            'before_widget' => '<div class="wpb_widgetised_column wpb_content_element">',
+            'after_widget' => '</aside>',
+        )
+    );
+
+    /* Register the primary sidebar. */
+    register_sidebar(
+        array(
+            'id' => '003',
+            'name' => __( 'Historico Suplementos', 'textdomain' ),
+            'description' => __( 'A short description of the sidebar.', 'textdomain' ),
+            'before_widget' => '<div class="wpb_widgetised_column wpb_content_element">',
+            'after_widget' => '</aside>',
+        )
+    );
+
+    /* Repeat register_sidebar() code for additional sidebars. */
+}
+add_action( 'widgets_init', 'textdomain_register_sidebars' );
 
 
  

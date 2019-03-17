@@ -18,7 +18,99 @@
     color: #fff
 }
 
+.post-meta.single-post-meta .post-author-name {
+    overflow: initial;
+}
 
+.facebook-sidebar .bs-likebox{
+    padding: 0 !important;
+        min-height: 500px;
+        overflow: hidden;
+}
+
+
+.gaceta-pdf-title{
+    text-align: center;
+    font-size: 1.25em;
+    font-family: 'Lato';
+    font-weight: 200;
+    color: #203466;
+    line-height: 24px;
+}
+.gaceta-decarga-pdf{
+    font-size: 1.15em;
+    font-family: 'Lato';
+    font-weight: 200;
+    text-align: center;
+}
+.gaceta-decarga-pdf a{
+        color: #ac852e;
+}
+
+.layout-1-col, .layout-2-col, .layout-3-col {
+    margin-top: 0px;
+}
+
+.format-icon.format-video {
+    right: 15px;
+    top: 15px;
+    width: 65px;
+    height: 65px;
+    line-height: 59px;
+    font-size: 35px;
+    padding-left: 8px !important;
+}
+.format-video .fa-play{
+        color: #cc181e;
+}
+.listing-item-blog .featured:hover .format-icon {
+    right: 45%;
+    top: 40%;
+}
+
+ 
+#home-headers .widget{
+        background: transparent;
+    border: none;
+}
+
+.notas-home .listing-item-blog-5 {
+    border: none
+}
+
+.gaceta-pdf img {
+    max-width: 275px;
+}
+.gaceta-pdf p{
+    text-align: center;
+}
+.wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
+    margin-bottom: 0;
+}
+
+.page-layout-2-col-right .content-wrap, .bf-breadcrumb-container{
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+.bf-breadcrumb .bf-breadcrumb-item:after {
+    content: "/";
+    color: #fff;
+}
+.gaceta-thumb img{
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 700px){
+    body .site-header, body.bs-hide-ha .site-header {
+        display: block;
+    }
+}
+
+.fullscreenvideo video {
+    background: #ffffff;}
+    
 .bf-breadcrumb-container,
 .navbar-default {
     padding: 0

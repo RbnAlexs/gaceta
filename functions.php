@@ -4,7 +4,7 @@
 /**
  * Registro de Sidebars
 **/
-
+/*
 add_action( 'register_sidebar', function( $sidebar )
 {
     global $wp_registered_sidebars;
@@ -30,6 +30,7 @@ add_action( 'register_sidebar', function( $sidebar )
 
     $wp_registered_sidebars[ $id ] = $sidebar;
 }); 
+*/
 
 add_action( 'register_sidebar', function( $sidebar )
 {

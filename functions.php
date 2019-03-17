@@ -13,7 +13,9 @@ function textdomain_register_sidebars() {
             'name' => __( 'Inicio', 'textdomain' ),
             'description' => __( 'A short description of the sidebar.', 'textdomain' ),
             'before_widget' => '<div class="wpb_widgetised_column wpb_content_element">',
-            'after_widget' => '</aside>',
+            'after_widget' => '</div>',
+            'before_title' => '<div class="section-heading sh-t5 sh-s1"><span class="h-text">',
+            'after_title' => ' </span></div>'
         )
     );
 
@@ -24,7 +26,9 @@ function textdomain_register_sidebars() {
             'name' => __( 'Historico Gacetas', 'textdomain' ),
             'description' => __( 'A short description of the sidebar.', 'textdomain' ),
             'before_widget' => '<div class="wpb_widgetised_column wpb_content_element">',
-            'after_widget' => '</aside>',
+            'after_widget' => '</div>',
+            'before_title' => '<div class="section-heading sh-t5 sh-s1"><span class="h-text">',
+            'after_title' => ' </span></div>'
         )
     );
 
@@ -34,8 +38,8 @@ function textdomain_register_sidebars() {
             'id' => '003',
             'name' => __( 'Historico Suplementos', 'textdomain' ),
             'description' => __( 'A short description of the sidebar.', 'textdomain' ),
-            'before_widget' => '<div class="wpb_widgetised_column wpb_content_element">',
-            'after_widget' => '</aside>',
+            'before_widget' => '<div id="%1$s class="widget %2$s wpb_widgetised_column wpb_content_element">',
+            'after_widget' => '</div>',
         )
     );
 

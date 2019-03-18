@@ -30,7 +30,7 @@ add_action( 'register_sidebar', function( $sidebar )
 
     $wp_registered_sidebars[ $id ] = $sidebar;
 }); 
-*/
+
 
 add_action( 'register_sidebar', function( $sidebar )
 {
@@ -82,7 +82,7 @@ add_action( 'register_sidebar', function( $sidebar )
     $wp_registered_sidebars[ $id ] = $sidebar;
 }); 
 
-
+*/
 
 $template_directory = get_template_directory() . '/';
 

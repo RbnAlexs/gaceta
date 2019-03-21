@@ -32,15 +32,7 @@ add_action( 'register_sidebar', function( $sidebar )
 }); 
 */
 
-function child_theme_og_image() { 
-    $mypod = pods('gaceta_comunidad_pdf');
-    $params = array('limit' => 1);
-    $mypod->find($params);
-    while ( $mypod->fetch() ) :
-        echo '<meta property="og:image" content="'.get_the_post_thumbnail().'" />';
-    endwhile;
-}
-add_action( 'wp_head', 'child_theme_og_image' );
+
 
 add_action( 'register_sidebar', function( $sidebar )
 {

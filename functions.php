@@ -37,7 +37,7 @@ function child_theme_og_image() {
     $params = array('limit' => 1);
     $mypod->find($params);
     while ( $mypod->fetch() ) :
-        echo '<meta property="og:image" content="'.$mypod->display( 'image' ).'" />';
+        //echo '<meta property="og:image" content="'.$mypod->display( 'image' ).'" />';
     endwhile;
 }
 add_action( 'wp_head', 'child_theme_og_image' );

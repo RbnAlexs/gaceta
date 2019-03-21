@@ -32,6 +32,18 @@ add_action( 'register_sidebar', function( $sidebar )
 }); 
 */
 
+function child_theme_og_image() { 
+
+    $mypod = pods('gaceta_comunidad_pdf');
+    $params = array('limit' => 1);
+    $mypod->find($params);
+    while ( $mypod->fetch() ) :
+        $image = get_the_post_thumbnail( $video, 'full', array( 'class' => 'thumbnail' ));
+        echo '<meta property="og:image" content="'.$image.'" />';
+    endwhile;
+}
+add_action( 'wp_head', 'child_theme_og_image' );
+
 add_action( 'register_sidebar', function( $sidebar )
 {
     global $wp_registered_sidebars;

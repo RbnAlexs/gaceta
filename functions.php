@@ -37,8 +37,7 @@ function child_theme_og_image() {
     $params = array('limit' => 1);
     $mypod->find($params);
     while ( $mypod->fetch() ) :
-        $featured_img_url = get_the_post_thumbnail_url('full'); 
-        echo '<meta property="og:image" content="'.$featured_img_url.'" />';
+        echo '<meta property="og:image" content="'.get_the_post_thumbnail_url().'" />';
     endwhile;
 }
 add_action( 'wp_head', 'child_theme_og_image' );

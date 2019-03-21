@@ -38,7 +38,7 @@ function child_theme_og_image() {
     $params = array('limit' => 1);
     $mypod->find($params);
     while ( $mypod->fetch() ) :
-        $image = get_the_post_thumbnail( $video, 'full', array( 'class' => 'thumbnail' ));
+        $image = get_the_post_thumbnail_url('full');
         echo '<meta property="og:image" content="'.$image.'" />';
     endwhile;
 }

@@ -43,6 +43,7 @@
 			$podsparams = array( 'limit' => 1,'orderby' => 'date DESC');
 			$pods = pods( 'gaceta_comunidad_pdf', $podsparams ); ?>
 			<meta property="og:image" content='<?php echo get_the_post_thumbnail_url( $pods->display( 'ID' ), 'full' ); ?>' />
+			<meta name="twitter:image" content='<?php echo get_the_post_thumbnail_url( $pods->display( 'ID' ), 'full' ); ?>'/>
 		<?php } ?>
 		<?php wp_head(); ?>
 	</head>

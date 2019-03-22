@@ -38,6 +38,12 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"/>
         <div id="fb-root"></div>
         <script async defer src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.2"></script>
+		<?php 
+		if (is_front_page()){
+			$podsparams = array( 'limit' => 1,'orderby' => 'date DESC');
+			$pods = pods( 'gaceta_comunidad_pdf', $podsparams ); ?>
+			<meta property="og:image" content='<?php echo get_the_post_thumbnail_url( $pods->display( 'ID' ), 'full' ); ?>' />
+		<?php } ?>
 		<?php wp_head(); ?>
 	</head>
 

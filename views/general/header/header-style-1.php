@@ -50,7 +50,7 @@ if ( $ad_left['active_location'] || $ad_right['active_location'] ) {
 		        <a class="navbar-brand" href="http://www.cuautitlan.unam.mx/">   
 		            <img src="<?php bloginfo('template_url'); ?>/views/general/header/img/logo-fesc.png" height="110" width="85">
 		        </a>
-		        <a class="navbar-brand" href="http://www.cuautitlan.unam.mx/">   
+		        <a class="navbar-brand" href="<?php echo get_home_url();?>">   
 		            <img src="<?php bloginfo('template_url'); ?>/views/general/header/img/logo-fesc-difusion.png" height="110">
 		        </a>
 		        <div class="navbar-name" style="font-size: 23px; color:#FFF; font-family: Arial; text-align:left;padding-top: 5px;">

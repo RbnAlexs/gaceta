@@ -2,12 +2,87 @@
 /* CUSTOM CODE */
 
 /**
- * Remove Rev Slider Metabox
- */
+ * Registro de Sidebars
+**/
+/*
+add_action( 'register_sidebar', function( $sidebar )
+{
+    global $wp_registered_sidebars;
+
+    if ( 'Primary Sidebar' !== $sidebar[ 'name' ] )
+        return;
+
+    $id = $sidebar[ 'id' ];
+    $sidebar[ 'name' ] = 'Noticias - Categoría';
+
+    $wp_registered_sidebars[ $id ] = $sidebar;
+});
+
+add_action( 'register_sidebar', function( $sidebar )
+{
+    global $wp_registered_sidebars;
+
+    if ( 'Secondary Sidebar' !== $sidebar[ 'name' ] )
+        return;
+
+    $id = $sidebar[ 'id' ];
+    $sidebar[ 'name' ] = 'Histórico Noticias';
+
+    $wp_registered_sidebars[ $id ] = $sidebar;
+}); 
+*/
 
 
 
- 
+add_action( 'register_sidebar', function( $sidebar )
+{
+    global $wp_registered_sidebars;
+
+    if ( 'Footer - Column 1' !== $sidebar[ 'name' ] )
+        return;
+
+    $id = $sidebar[ 'id' ];
+    $sidebar[ 'name' ] = 'Histórico Gaceta';
+
+    $wp_registered_sidebars[ $id ] = $sidebar;
+}); 
+
+add_action( 'register_sidebar', function( $sidebar )
+{
+    global $wp_registered_sidebars;
+
+    if ( 'Footer - Column 2' !== $sidebar[ 'name' ] )
+        return;
+
+    $id = $sidebar[ 'id' ];
+    $sidebar[ 'name' ] = 'Histórico Suplemento';
+    $wp_registered_sidebars[ $id ] = $sidebar;
+}); 
+
+add_action( 'register_sidebar', function( $sidebar )
+{
+    global $wp_registered_sidebars;
+
+    if ( 'Footer - Column 3' !== $sidebar[ 'name' ] )
+        return;
+
+    $id = $sidebar[ 'id' ];
+    $sidebar[ 'name' ] = 'Histórico Video';
+    $wp_registered_sidebars[ $id ] = $sidebar;
+}); 
+
+
+add_action( 'register_sidebar', function( $sidebar )
+{
+    global $wp_registered_sidebars;
+
+    if ( 'Footer - Column 4' !== $sidebar[ 'name' ] )
+        return;
+
+    $id = $sidebar[ 'id' ];
+    $sidebar[ 'name' ] = 'Página de Inicio';
+    $wp_registered_sidebars[ $id ] = $sidebar;
+}); 
 
 
 

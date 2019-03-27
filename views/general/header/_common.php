@@ -31,12 +31,20 @@
 		}
 
 		?>
+		<link rel="shortcut icon" href="http://www.cuautitlan.unam.mx/img/favicon_fesc.png">
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"/>
         <div id="fb-root"></div>
         <script async defer src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.2"></script>
+		<?php 
+		if (is_front_page()){
+			$podsparams = array( 'limit' => 1,'orderby' => 'date DESC');
+			$pods = pods( 'gaceta_comunidad_pdf', $podsparams ); ?>
+			<meta property="og:image" content='<?php echo get_the_post_thumbnail_url( $pods->display( 'ID' ), 'full' ); ?>' />
+			<meta name="twitter:image" content='<?php echo get_the_post_thumbnail_url( $pods->display( 'ID' ), 'full' ); ?>'/>
+		<?php } ?>
 		<?php wp_head(); ?>
 	</head>
 

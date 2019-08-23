@@ -131,7 +131,7 @@ if ( publisher_get_option( 'footer_social_feed' ) != 'hide' && publisher_get_opt
           </li>
           <li>
             <i class="fa fa-angle-right"></i>
-            <a href="http://asesorias.cuautitlan2.unam.mx/fondo_editorial/comite_editorial/">Comité Editorial</a>
+              <a href="http://www.cuautitlan.unam.mx/comite_editorial/">Comité Editorial</a>
           </li>
           <li>
             <i class="fa fa-angle-right"></i>
